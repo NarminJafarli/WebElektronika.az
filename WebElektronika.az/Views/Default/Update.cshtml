@@ -1,0 +1,45 @@
+﻿@using WebElektronika.az.DTO
+@model TechnologyDTO
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Views/Shared/DefaultLayout.cshtml";
+}
+
+<div class="contact py-sm-5 py-4">
+	<div class="container py-xl-4 py-lg-2">
+		<!-- tittle heading -->
+		<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+			<span>R</span>edaktə
+			<span>E</span>t
+		</h3>
+		<!-- form -->
+		<form method="post">
+			<div class="contact-grids1 w3agile-6">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 contact-form1 form-group">
+						<label class="col-form-label">Foto</label>
+						<input type="text" class="form-control" asp-for="ImageURL" placeholder="" required="">
+					</div>
+					<div class="col-md-12 col-sm-12 contact-form1 form-group">
+						<label class="col-form-label">Başlıq</label>
+						<input type="text" class="form-control" asp-for="Title" placeholder="" required="">
+					</div>
+					<div class="col-md-12 col-sm-12 contact-form1 form-group">
+						<label class="col-form-label">Qiymət</label>
+						<input type="text" class="form-control" asp-for="Price" placeholder="" required="">
+					</div>
+					<div class="col-md-12 col-sm-12 contact-form1 form-group">
+						<label class="col-form-label">Endirimli qiymət</label>
+						<input type="text" class="form-control" asp-for="Discount" placeholder="" required="">
+					</div>
+				</div>
+				<div class="contact-form">
+					<input type="submit" value="Redaktə et">
+				</div>
+			</div>
+		</form>
+		<!-- //form -->
+	</div>
+</div>
+<!-- //contact -->
+
